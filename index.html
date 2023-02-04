@@ -1,0 +1,53 @@
+<body>
+  <html>
+ <br>
+ <br>
+ <br>
+ <br>
+    
+<div class="container">
+  <form>
+    <center><h3 style="color: #001CB9" >Join Us</h3>
+      <center><p class="message"> Or Sign Up using </p></center>
+      
+      <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+  <div class ="frame">
+    <a href="#" class="btn">
+ <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+</a>
+    <a href="#" class="btn">
+  <i class="fab fa-twitter" style="color: #00acee;"></i>
+</a>
+    
+    <a href="#" class="btn">
+ <i class="fab fa-linkedin-in" style="color:#0e76a8;"></i>
+</a>
+  
+    <a href="#" class="btn">
+ <i class="far fa-envelope"></i>
+</a>
+</div>
+      <input type="text" id="usrname" name="usrname" placeholder="Email" required>
+    
+    <input type="text" id="usrname" name="usrname" placeholder="Username" required>
+  
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password"  required>
+    
+    <input type="Submit" value="SIGN UP">
+    
+     <p class="message">Already signed up? <a href="#">Sign In</a></p>
+  </form>
+</div>
+  
+
+<div id="message">
+  <h3>Password must contain the following:</h3>
+	<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+	<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+	<p id="number" class="invalid">A <b>number</b></p>
+	<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+</body>
+</html>

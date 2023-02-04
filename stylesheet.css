@@ -1,0 +1,185 @@
+body {
+background-color: #fff;
+font-size: 16px;
+font-family: "Roboto", sans-serif;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: -30px;
+   background: #e0e5ec;
+}
+
+.frame{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 200px;
+  position: relative;
+   box-shadow:
+   -7px -7px 20px 0px 0,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,
+   inset 0px 0px 0px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+   border-radius: 10px;
+}
+
+.btn{
+  height: 35px;
+  width: 35px;
+  border-radius: 3px;
+  background: #e0e5ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,
+   inset 0px 0px 0px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  font-size: 16px;
+  color: rgba(42, 52, 84, 1);
+  text-decoration: none;
+}
+.btn:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
+
+
+
+/* Style all input fields */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  border-radius: 3em;
+  box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    
+}
+
+/* Style the Submit button */
+input[type=Submit] {
+  color: #fff;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  border: 0px solid #ccc;
+  background-color: #001CB9;
+
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  padding: 16px;
+  width: 500px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 1px #FFF, 1px 10px 10px #BABECC;
+   border-radius: 2em;
+    min-width: 100px;
+    min-height: 350px;
+
+
+
+  
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  
+}
+
+ .message {
+  margin: 15px 0 0;
+  color: #848484;
+  font-size: 12px;
+   
+}
+
+.message a {
+   color: #001CB9;
+  text-decoration: none;
+}
+
+
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
